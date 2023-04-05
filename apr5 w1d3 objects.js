@@ -69,7 +69,7 @@ const VoterFour = {
   name: "Andrew",
   age: 24,
   didVote: true,
-  birthday: '1999-01-01';
+  birthday: '1999-01-01',
 };
 
 
@@ -88,6 +88,13 @@ if (voterOneDidVote) {
 
 const setOfVoters= [voterOne, voterTwo, voterThree, voterFour]
 
+let numVoters = 0;
 for (voter in setOfVoters) {
   console.log('name', voter.name);
+    if(voter.didVote) {
+      numVoters = numVoters +1;
+    }
 }
+console.log('The number of people who voted was: ', ${numVoters}``)
+
+//why and how code works/means, how to use
