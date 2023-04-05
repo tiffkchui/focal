@@ -88,13 +88,44 @@ if (voterOneDidVote) {
 
 const setOfVoters= [voterOne, voterTwo, voterThree, voterFour]
 
-let numVoters = 0;
-for (voter in setOfVoters) {
-  console.log('name', voter.name);
-    if(voter.didVote) {
-      numVoters = numVoters +1;
-    }
-}
-console.log('The number of people who voted was: ', ${numVoters}``)
+//let numVoters = 0;
+//for (voter in setOfVoters) {
+  //console.log('name', voter.name);
+    //if(voter.didVote) {
+    //  numVoters = numVoters +1;
+   // }
+//}
+//console.log('The number of people who voted was: ', ${numVoters}``)
 
 //why and how code works/means, how to use
+
+let yy = 16;
+console.log(`yy before: `, yy)
+
+function addTen(num) {
+  let result = num + 10;
+  console.loog(`result:`, result);
+  num = num + 66;
+  return result;
+}
+
+//FUNCTION CALL
+const answer = addTen(yy) //take on value of yy
+console.log(`answer:`, answer);
+console.log(`yy after: `, yy);
+
+//here is an object
+cont myObject = {
+  value: 42,
+  colour: 'black'
+};
+
+function display(object) {
+  console.log(`display:`, object.value);
+  return object.value;
+}
+
+
+
+const response = display();
+console.log(`the response:`, response);
