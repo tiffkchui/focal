@@ -14,16 +14,18 @@ console.log(`answer:`, answer);
 console.log(`yy after: `, yy);
 
 //here is an object
-cont myObject = {
+const myObject = {
   value: 42,
   colour: 'black'
 };
+console.log(`object beofre:`, myObject);
 
 function display(object) {
   console.log(`display:`, object.value);
+  const retVal = object.value;
   object.value = 'monkeyfuzz';
   return retVal;
 
   const response = display(myOjbect);
   console.log(`the response:`), response);
-  console.log(`object after:`, object);
+  console.log(`object after:`, myObject);
